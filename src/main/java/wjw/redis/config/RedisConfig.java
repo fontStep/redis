@@ -12,6 +12,7 @@ import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import wjw.redis.utils.FastJsonRedisSerializer;
 
 /**
@@ -24,6 +25,7 @@ import wjw.redis.utils.FastJsonRedisSerializer;
 @Configuration
 @ConditionalOnClass(RedisOperations.class)
 @EnableConfigurationProperties(RedisProperties.class)
+@EnableRedisHttpSession
 public class RedisConfig extends CachingConfigurerSupport {
     @Bean
     @ConditionalOnMissingBean(name = "redisTemplate")

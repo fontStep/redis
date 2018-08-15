@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 /**
  * @ClassName: UserPO
- * @Description: TOOD
+ * @Description: 用户对象
  * @version: v1.0.0
  * @author: wjw
  * @date: 2018/8/14 16:04

@@ -36,7 +36,7 @@ public class RedisApplicationTests {
     */
     @Test
     public void set(){
-        redisTemplate.opsForValue().set("test:set","testValue1");
+        redisTemplate.opsForValue().set("slave","slave");
     }
 
     /**
